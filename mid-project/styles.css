@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: url('img\background.jpg') no-repeat center center fixed;
+  background: url('https://c.wallhere.com/photos/ec/d9/trees_top_view_light-1179741.jpg!d') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -54,8 +54,12 @@ body {
   cursor: pointer;
   position: relative;
   transition: background-color 0.3s ease;
+  color: #bbb;
 }
-
+.payment-option.selected span {
+  font-weight: bold;
+  color: black;
+}
 .payment-option:hover {
   background-color: #f0f4ff;
 }
@@ -69,6 +73,7 @@ body {
 .payment-option span {
   display: flex;
   align-items: center;
+  
 }
 
 .payment-option.selected::after {
