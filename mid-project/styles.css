@@ -8,7 +8,7 @@
 /* Background image */
 body {
   font-family: Arial, sans-serif;
-  background: url('frontend-course\mid-project\img\background.jpg') no-repeat center center fixed;
+  background: url('img\background.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -24,6 +24,23 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 20px;
+  position: relative;
+}
+
+/* Three dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /* Title */
@@ -41,6 +58,12 @@ body {
   padding: 10px 0;
   border-top: 1px solid #eee;
   cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.payment-option:hover {
+  background-color: #f0f4ff;
 }
 
 .payment-option img {
@@ -49,9 +72,18 @@ body {
   margin-right: 10px;
 }
 
-.payment-option.selected {
-  font-weight: bold;
-  color: black;
+.payment-option span {
+  display: flex;
+  align-items: center;
+}
+
+/* Checkmark icon */
+.payment-option.selected::after {
+  content: '✔';
+  font-size: 18px;
+  color: #2d82fb;
+  position: absolute;
+  right: 10px;
 }
 
 /* Button */

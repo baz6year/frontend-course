@@ -33,7 +33,7 @@ nav a {
 }
 
 .hero {
-    background-image: url('frontend-course/telegraph/img/office.jpg'); /* Ссылка на фоновое изображение */
+    background-image: url('C:\Users\alima\Documents\frontend\frontend.24\frontend-course\mid-project\img\background.jpg'); /* Ссылка на фоновое изображение */
     background-size: cover; /* Изображение занимает всю секцию */
     background-position: center; /* Центрируем изображение */
     height: 100vh; /* Высота секции */

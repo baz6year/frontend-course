@@ -8,21 +8,36 @@
 </head>
 <body>
     <div class="payment-box">
+      
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <h2>PAYMENT METHOD</h2>
+
         <div class="payment-option" onclick="selectOption(this)">
-            <img src="frontend-course\mid-project\img\visa.svg" alt="Visa Logo">
-            <span>VISA</span>
+            <span>
+                <img src="img\visa.svg" alt="Visa Logo">
+                VISA
+            </span>
         </div>
         <div class="payment-option selected" onclick="selectOption(this)">
-            <img src="frontend-course\mid-project\img\mastercard.svg" alt="Mastercard Logo">
-            <span>MASTERCARD</span>
+            <span>
+                <img src="img\mastercard.svg" alt="Mastercard Logo">
+                MASTERCARD
+            </span>
         </div>
         <div class="payment-option" onclick="selectOption(this)">
-            <img src="frontend-course\mid-project\img\maestro.svg" alt="Maestro Logo">
-            <span>MAESTRO</span>
+            <span>
+                <img src="img\maestro.svg" alt="Maestro Logo">
+                MAESTRO
+            </span>
         </div>
+
         <button class="next-button">NEXT STEP →</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
